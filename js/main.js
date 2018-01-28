@@ -14,6 +14,14 @@ collection.load(function () {
 		});
 		collection.save(window.location.reload());
 	}
+	if (collectionFind.length > 1) {
+		collection.remove();
+		collection.insert({
+			status: "playing",
+			number: 0
+		});
+		collection.save(window.location.reload());
+	}
 	if (collectionFind[0].status == "playing") {
 		test();
 	}
