@@ -38,11 +38,12 @@ function test() {
 	var reciprocal;
 	var control;
 	var number = 0;
+	var tim = 300;
 
 	function showGame() {
 		$("#menu").hide();
 		$("#playing").show();
-		$("#second").text("60.00");
+		$("#second").text(tim + ".00");
 	}
 
 
@@ -69,22 +70,22 @@ function test() {
 		status = "倒數";
 		$("#answer").val("");
 
-		var time = 60;
+		var time = tim;
 
 		reciprocal = setInterval(function (reciprocal) {
 			if (time <= 0) {
 				stopReciprocal(reciprocal);
 			} else {
-				var ti = ((Math.round(time * 1000) / 1000) + "");
+				var ti = ((Math.round(time * 10000) / 10000) + "");
 
-				if (ti.length < 5) {
-					if ((Math.round(time * 1000) / 1000) < 10) {
+				if (ti.length < 6) {
+					if ((Math.round(time * 10000) / 10000) < 100) {
 						ti = "0" + ti;
-						for (; 5 > ti.length;) {
+						for (; 6 > ti.length;) {
 							ti = ti + "0";
 						}
 					} else {
-						for (; 5 > ti.length;) {
+						for (; 6 > ti.length;) {
 							ti = ti + "0";
 						}
 					}
