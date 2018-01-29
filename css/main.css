@@ -1,0 +1,71 @@
+body, html {
+  text-align: center;
+}
+
+#playing, #menu {
+  border: 5px;
+  border-style: solid;
+  border-radius: 40px;
+  border-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 4%;
+  height: 500px;
+}
+
+h1 {
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 80px;
+  color: rgba(206, 60, 60, 0.815);
+}
+
+#num{
+  font-size: 80px;
+  color: rgba(206, 60, 60, 0.815);
+}
+
+h3 {
+  font-size: 90px;
+}
+
+h4 {
+  margin-top: 20px;
+  font-size: 45px;
+}
+
+
+input {
+  width: 100px; 
+  height: 110px;
+  font-size: 90px;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  width: 300px;
+  margin-top: 20px;
+}
